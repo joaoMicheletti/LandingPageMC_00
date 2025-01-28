@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: 'Lucidity';
     src: url(./fonts/Lucidity-Expand.ttf) format('truetype');
@@ -107,10 +109,10 @@ a {
     width: 100%;
     text-align: center;
     background: radial-gradient(circle, #df832e, #683409);
-    height: 100px;
+    height: 80px;
 }
 #Data {
-    padding-top: 20px;
+    padding-top: 5px;
     width: 30%;
     margin-left: 35%;
     display: flex;
@@ -133,7 +135,8 @@ a {
     height: 90px;
 }
 .number{
-    font-weight: 600;
+    font-weight: 900;
+    font-family: "Montserrat";
 }
 @media(max-width: 600px){
     #Data {
@@ -211,7 +214,7 @@ a {
     width: 90%;
     height: 380px;
 }
-@media(max-width:600px){
+@media(max-width:800px){
     .DivVsl {
         margin-left: 5%;
         width: 90%;
@@ -228,175 +231,73 @@ a {
 }
 #section03 {
     width: 100%;
-    height: 100vh;
-    background-image: url(./img/backgrund03.png);
+    height: auto;
+    background-image: url(./_img/backgrund03.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #ContentSection03 {
+    text-align: center;
     width: 50%;
-    margin-left: 50%;
-    height: 100vh;
+    margin-left: 40%;
+    height: auto;
+}
+
+#LogoSection03 {
+    margin-top: 50px;
+    width: 30%;
 }
 .pContentsection03 {
     padding-top: 80px;
     color: white;
     font-family: "Poppins";
-    font-size: 27px;
+    font-size: 15px;
     margin-bottom: 80px;
 }
+.pContentsection03 d {
+    color: #f5dfa4;
+}
 #BtunSection03{
-    width: 60%;
-    height: 40px;
+    cursor: pointer;
+    width: 50%;
+    height: 45px;
     border: none;
     border-radius: 5px;
-    background: radial-gradient(circle, #df832e, #683409);
+    background: radial-gradient(circle at 0% 0%, #79490a, #e19410, #fac678, #b27817, #dda13b);
     animation: wave 3s infinite;
 }
 #BtunSection03 a {
     font-family: "Poppins";
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
-    color: white;
-    
+    color: #4d3614;  
 }
-@media(max-width: 600px){
-    #section03{
-        background-image: url(./img/backgrundmobile03.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    #ContentSection03 {
-        width: 80%;
-        margin-left: 10%;
-        height: 100vh;
-    }
-    .pContentsection03 {
-        margin-left: 10px;
-        padding-top: 180px;
-        color: white;
-        font-family: "Poppins";
-        font-size: 18px;
-        margin-bottom: 80px;
-    }
-    #BtunSection03{
-        width: 90%;
-        height: 40px;
-        border: none;
-        border-radius: 5px;
-        background: radial-gradient(circle, #df832e, #683409);
-    }
-}
-body #Quadradinhos{
-    width: 100%;
-    height: 100vh;
-    background-image: url(./img/quadradinhos.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#QuadradinhosContainer {
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    margin-left: 5%;
-}
-
-.Quadradinhos {
-    width: 40%;
-    height: auto;
-}
-
-.quadradinhos3{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    width: 100%;
-    justify-content: space-around;
-}
-.Quadrado {
-    background: linear-gradient(135deg, #ffffff00, #27633f);
-    border: solid 0.01px;
-    border-color: #27633f;
-    width: 30%;
-    height: 120px;
-    text-align: left;
-    border-radius: 10px;
-}
-#Q2 .Quadrado{
-    background: linear-gradient(135deg, #ff583300, #723320);
-    border: solid 0.01px;
-    border-color:#723320;
-
-}
-
-.Pquadradro {
-    margin-left: 3px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    font-family: "Poppins";
-    font-size: 13px;
-    color: white;
-}
-.Pcorpo {
-    margin-left: 3px;
-    font-size: 10px;
-    font-family: "Poppins";
-    color: white;
-    padding-bottom: 10px;
-}
-#QuadradinhosBTN {
-    color: white;
-    padding-top: 20px;
+#TxtMeta {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
     text-align: center;
-    width: 50%;
-    margin-left: 25%;
-}
-#QuadradinhosBTN p {
     font-family: "Poppins";
+    color: white;
+    font-size: 15px;
+    padding: 30px;
 }
-#QuadradinhosBTN .larg {
-    font-weight: 600;
-}
-#QuadradinhosBTN  button {
-    height: 35px;
-    background: linear-gradient(135deg, #bf0f30, #ff583327);
-
-}
-@media(max-width: 800px){
-    body #Quadradinhos{
+@media(max-width:800px){
+    #ContentSection03 {
+        text-align: center;
+        margin-left: 5%;
+        width: 90%;
         height: auto;
     }
-    #QuadradinhosContainer {
-        display: flex;
-        flex-direction: column;
-    }    
-    .Quadradinhos {
-
-        width: 100%;
-        height: auto;
-    }  
-    #QuadradinhosBTN {padding-bottom: 30px;
-    }  
 }
 #Section04 {
     width: 100%;
     height: 100vh;
-    background-image: url(img/backgrund04.png);
+    background-image: url(_img/section04back.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-#DivSection04{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background: radial-gradient(circle, #df832e, #683409); 
 }
 .ContentDivSection04 {
     width: 40%;
@@ -413,7 +314,12 @@ body #Quadradinhos{
     font-family:'Poppins';
     font-size: 21px;
 }
-@media(max-width: 600px){
+@media(max-width: 800px){
+    #Section04 {
+        width: 100%;
+        height: 100vh;
+        background-image: url(_img/section04Mobile.webp);
+    }
     #ImgDivSection04 {
         padding-top: 10px;
         width: 50%;
@@ -442,7 +348,7 @@ body #Quadradinhos{
     font-size: 18px;
     font-family: "Lucidity";
     color: #eaab03;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 #pTxtSection0402 {
     color: white;
@@ -473,7 +379,44 @@ body #Quadradinhos{
     font-size: 12px;
     padding-bottom: 5px;
 }
-@media(max-width:600px){
+#DinamicasContainer {
+    margin-left: 10%;
+    margin-top: 40px;
+    width: 80%;
+}
+#Dinamicas{
+    width: 50%;
+}
+.TitleDinamicas {
+    font-family: sans-serif;
+    color: #f9a01b;
+    font-weight: 900;
+    font-size: 21px;
+}
+.CorpoDinamicas{
+    margin-top: 5px;
+    padding: 30px;
+    font-family: "Montserrat";
+    font-size: 15px;
+    color: white;
+    line-height: 25px;
+}
+@media(max-width:800px){
+    .TitleDinamicas {
+        text-align: center;
+        font-family: sans-serif;
+        color: #f9a01b;
+        font-weight: 900;
+        font-size: 21px;
+    }
+    #DinamicasContainer {
+        margin-left: 5%;
+        margin-top: 90px;
+        width: 90%;
+    }
+    #Dinamicas{
+        width: 100%;
+    }
     #conteinerSection04 {
         display: flex;
         flex-direction: column;
