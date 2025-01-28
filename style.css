@@ -14,146 +14,95 @@ a {
     color: black;
 }
 #Primary{
-    background-image: url(./img/backgrund01.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(./_img/HomeBack.webp);
+    background-position:  center center;
+    background-repeat:  no-repeat;
+    background-size:  cover;
     width: 100%;
     height: 100vh;
 }
-#UpBar {
-    text-align: center;
+#Upbar {
+    font-family: "Poppins";
+    font-size: 16px;
+    color: #d68a0e;
+    height: 35px;
+    padding: 5px;
     width: 100%;
-    height: 45px;
-    background: linear-gradient(to right, #bf0f30, #731d2c);
-}
-#UpBar p {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    font-size: 14px;
-    padding: 10px;
-    animation: wave 3s infinite;
+    text-align: center;
+    background-color: #ffffff;
 }
 
-#TxtPrimary {
-    margin-left: 5%;
-    width: 40%;
+#ConteudoHome{
+    width: 50%;
     height: 100vh;
+    padding: 5%;
 }
 #p1 {
-    padding-top: 50px;
-    font-family: 'Lucidity';
-    font-size: 26px;
-    color: white;
-}
-#p1a {
-    font-family: 'Lucidity';
-    font-size: 26px;
-    color: #eaab03;
-    padding-bottom: 50px;
-}
-
-@keyframes wave {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-10px);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  75% {
-    transform: translateY(-5px);
-  }
-}
-
-.p2 {
-    font-size: 14px;
-    color: white;
-    font-family: "Poppins";
-    animation: slideIn 2s ease-in-out forwards; /* Animação */
-}
-.p3 {
-    padding-top: 20px;
-    font-size: 14px;
-    color: white;
-    font-family: "Poppins";
-    animation: slideIn 2s ease-in-out forwards; /* Animação */
-}
-.p3a {
-    font-size: 14px;
-    color: #eaab03;
-    font-family: "Poppins";
-}
-.BTN {
-    background: radial-gradient(circle, #df832e, #683409);
-    margin-top: 40px;
-    height: 30px;
-    width: 60%;
-    border: none;
-    border-radius: 5px;
-    animation: wave 2s infinite;
-}
-.BTN a {
-    color: white;
-    font-size: 13px;
-    font-family: "Poppins";
-}
-.p4{
     margin-top: 30px;
-    color: white;
-    font-family: 'Poppins';
-    font-size: 10px;
-}
-.p4a {
-    color: #d1b722;
-}
-.p5{
-    color: white;
     font-family: "Poppins";
     font-size: 14px;
+    color: white;
+} #p1  d {
+    font-weight: 600;
+    color: #f5dfa4;
+}
+#p2 {
     margin-top: 50px;
+    color: white;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+#p2 img {
+    margin-bottom: -8px;
+    padding: 5px;
+}
+#QuadradosHome {
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.quadradinhoHome{
+    text-align: center;
+    padding: 5px;
+    width: 30%;
+    background: linear-gradient(135deg, #df832e, #683409);
+    font-family: "Poppins";
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
 }
 
-@media(max-width: 600px){
-    #UpBar p {
-        font-size: 10px;
-    }
+@media(max-width: 800px){
     #Primary{
-        background-image: url(./img/desgner\ mobille.jpg);
-        background-size: cover;
+        background-image: url(./_img/HomeMobile.webp);
+        background-position:  center center;
+        background-repeat:  no-repeat;
+        background-size:  cover;
         width: 100%;
-        height: 100vh;
+        height: auto;
     }
-    #TxtPrimary {
-        padding-top: 100px;
-        color: white;
-        width: 99%;
-        height: 100vh;
+    #Upbar {
+        font-size: 14px;
     }
-    .p1 {
-        font-size: 13px;    
-    }
-    .p1a{
-        font-size: 13px;
-        padding-bottom: 20px;
-
-    }
-    .BTN {
-        margin-top: 20px;
-        height: 35px;
+    #LogoHome {
         width: 80%;
     }
-    .BTN a {
-        font-size: 10px;
-        font-family: "Poppins";
+    #ConteudoHome{
+        width: 100%;
+        height: auto;
+        padding: 10%;
     }
-    .p5{
-        font-size: 12px;
-        margin-top: 40px;
+    #QuadradosHome {
+        width: 100%;
     }
+    .quadradinhoHome{
+        font-size: 8px;
+    }
+
 }
+
 #DataBar {
     width: 100%;
     text-align: center;
